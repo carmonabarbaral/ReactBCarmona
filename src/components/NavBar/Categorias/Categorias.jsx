@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 export const Categorias = () => {
-   let Categorias =[
+   const Categorias =[
     {nombre:"DestinosNacionales",
       id: 1
   },
