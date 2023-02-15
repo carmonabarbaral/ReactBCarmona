@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 export const Categorias = () => {
    const Categorias =[
     {nombre:"DestinosNacionales",
-      id: 1
+      idCategoria:1
   },
   {nombre:"DestinosInternacionales",
-  id:2
+  idCategoria:2
 },
  {nombre:"Promociones",
-  id:3
+  idCategoria:3
  } ]
   return (
        <li className="nav-item dropdown">

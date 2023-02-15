@@ -5,7 +5,7 @@ import {BrowserRouter, Routes, Route } from "react-router-dom";
 //Components 
 import { Navbar } from './NavBar/Navbar'
 import {ItemListContainer} from './ItemListContainer/ItemListContainer';
-import {ItemDetailContainer } from './ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
 
 
 export const App = () => {
