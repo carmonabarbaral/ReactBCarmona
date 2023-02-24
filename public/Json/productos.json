@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "idCategoria":"1",
+    "idCategoria":1,
     "destino" : "Cataratas del Iguazú"    ,
     "precio":110700 ,
     "stock": 20 ,
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "idCategoria": "1",
+    "idCategoria": 1,
     "destino" : " San Carlos de Bariloche"    ,
     "precio":90000 ,
     "stock": 50 ,
@@ -19,7 +19,7 @@
   }, 
   {
     "id": 3,
-    "idCategoria": "1",
+    "idCategoria": 1,
     "destino" : "Mendoza"    ,
     "precio":70000 ,
     "stock": 30 ,
@@ -28,7 +28,7 @@
   }, 
   {
     "id": 4,
-    "idCategoria": "2",
+    "idCategoria": 2,
     "destino" : "Cancún"    ,
     "precio":700000 ,
     "stock": 30 ,
@@ -37,7 +37,7 @@
   }, 
   {
     "id":5,
-    "idCategoria":"2" ,
+    "idCategoria":2 ,
     "destino" : "Acapulco"    ,
     "precio":670000 ,
     "stock": 45 ,
@@ -46,7 +46,7 @@
   }, 
   {
     "id": 6,
-    "idCategoria": "2",
+    "idCategoria": 2,
     "destino" : "Ibiza"    ,
     "precio":1200000 ,
     "stock": 17 ,

@@ -17,7 +17,7 @@ export const Categorias = () => {
             </a>
             <ul className="dropdown-menu">
               { Categorias.map ((a) =>{
-                return (<li key ={a.id} >
+                return (<li key ={a.nombre} >
                   <Link className="dropdow-item" to ={`/category/${a.nombre}`}>{a.nombre}</Link>
                   </li>
                 )

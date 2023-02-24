@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 export const Item = ({item}) => {
-    return (
+  return (
        <div className="card mb-3 cardProducto border-light">
           <img src={`./img/${item.img}`} className="card-img-top" alt={`imagen de ${item.nombre}`} />
           <div className="card-body cardBody">

@@ -1,39 +1,21 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { consultarBDD } from "./../Utils/funciones";
-import { ItemList } from "../ItemList/ItemList";
+import {  ItemDetail } from "../ItemDetail/ItemDetail";
 
 import React from "react";
 
 export default function ItemDetailContainer() {
-	const { idCategoria } = useParams();
-	const [productos, setProductos] = useState([]);
-	const categorias = [
-		{ idCategoria: "1", categoria: "DestinosNacionales" },
-		{ idCategoria: "2", categoria: "DestinosInternacionales" },
-		{ idCategoria: "3", categoria: "Promociones" },
-	];
+	const { id } = useParams();
+	const [producto, setProducto] = useState([]);
 	useEffect(() => {
-		if (idCategoria) {
-			consultarBDD("../json/productos.json").then((products) => {
-				//busco la categoria por el params y guardo el id
-				const categoriaId = categorias.find(
-					(data) => data.categoria === idCategoria
-				).id;
-				//filtro por el id
+			consultarBDD("../Json/productos.json").then((products) => {
 				const prods = products.filter(
-					(prod) => prod.idCategoria === categoriaId
+					(prod) => prod.id === parseInt(id)
 				);
-				const items = ItemList({ prods });
-				setProductos(items);
+				setProducto(...prods);
 			});
-		} else {
-			consultarBDD("./json/productos.json").then((prods) => {
-				const items = ItemList({ prods });
-				setProductos(items);
-			});
-		}
-	}, [idCategoria]);
 
-	return <div className="row cardProductos">{productos}</div>;
+	},[id]);
+	return < ItemDetail className="row cardProductos" prod={producto}/>;
 }
