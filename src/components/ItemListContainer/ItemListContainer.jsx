@@ -18,29 +18,24 @@ export const ItemListContainer = () => {
  ]
  useEffect(() => {
  
-  if (idCategoria) {
+  if(idCategoria){
     getProductos().then(products => {
-      //busco la categoria por el params y guardo el id
-      const categoriaId = categorias.find((data) => data.categoria === idCategoria).id
-      
-      //filtro por el id
-      const prods = products.filter(prod => parseInt(prod.idCategoria) === parseInt(categoriaId))
-      
+      const categoriaId = categorias.find((data)=>data.categoria === idCategoria)?.id
+      const prods = products.filter(prod =>prod.stock >0).filter(prod => prod.idCategoria ===categoriaId)
       const items = <ItemList prods={prods} plantilla="Item"/>
-      
       setProductos(items)
     })
-  }else {
-    getProductos().then(prods => {
+  } else {
+    getProductos().then(products => {
+      const prods = products.filter(prod => prod.stock > 0)
       const items = <ItemList prods={prods} plantilla="Item" />
       setProductos(items)
     })
   }
 }, [idCategoria])
-
-  return(
-    <div className='row cardProductos'>
-      {productos}
-    </div>
-  )
-  }
+return (
+  <div className='row cardProductos'>
+    {productos}
+  </div>
+)
+}

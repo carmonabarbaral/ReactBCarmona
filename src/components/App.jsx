@@ -13,10 +13,10 @@ import { DarkModeProvider } from '../Contex/DarkModeContext';
 //Firebase
 import { getProductos } from "./Utils/firebase";
 
-//Components 
+//components
 import { Navbar } from './NavBar/Navbar'
 import {ItemListContainer} from './ItemListContainer/ItemListContainer';
-import ItemDetailContainer from "./ItemDetailContainer/ItemDetailContainer";
+import {ItemDetailContainer} from "./ItemDetailContainer/ItemDetailContainer";
 import { Checkout } from './Checkout/checkout';
 import { Cart } from './Cart/cart';
 
