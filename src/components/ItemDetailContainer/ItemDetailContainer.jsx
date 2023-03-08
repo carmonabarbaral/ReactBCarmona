@@ -15,7 +15,6 @@ export default function ItemDetailContainer() {
 				);
 				setProducto(...prods);
 			});
-
 	},[id]);
 	return < ItemDetail className="row cardProductos" prod={producto}/>;
 }

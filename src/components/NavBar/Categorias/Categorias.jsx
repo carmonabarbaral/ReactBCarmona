@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-export const Categorias = () => {
+import React from "react";
+export const Categorias = React.memo(() => {
    const Categorias =[
     {nombre:"DestinosNacionales",
       idCategoria:1
@@ -28,4 +29,4 @@ export const Categorias = () => {
             </ul>
       </li>
     )
-  }
+  })
