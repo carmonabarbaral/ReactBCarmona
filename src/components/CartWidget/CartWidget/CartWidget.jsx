@@ -5,7 +5,7 @@ export const CartWidget = () => {
   return (
     <>
       <Link className="nav-link" to={"/cart"}>
-        <button className="btn btn-dark cartWidget">Carrito</button>
+        <button className="btn btn-dark cartWidget">Carrito<i class="bi bi-airplane"></i></button>
         {getItemQuantity() > 0 && <span className="cantCarrito">{getItemQuantity()}</span>}
       </Link>
 

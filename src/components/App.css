@@ -1,19 +1,27 @@
+
+*{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
 .cardProducto {
   width: 18rem;
   margin:4px;
   background-color: hsl(0, 0, 97%);
-}
-
-.cardProductos {
-  margin:4px;
-  align-items: center;
   justify-content: center;
 }
 
+.cardProductos {
+  width: 18 rem;
+  margin:4px;
+  justify-content: center;
+
+}
+
 .cardBody {
-  background-color: white;
-  margin-bottom: 3px;
-  text-align: center;
+background-color: #D3D3D3;
+margin-bottom: 3px;
+text-align: center;
+
 }
 .cardBodyDark {
   background-color: hsl(0, 0%, 33%);
@@ -27,19 +35,35 @@
 .cardCart {
   max-width: 640px;
 }
+.cartWidget {
+  margin-right: 40px;
+  color: white;
+}
+.cartContainer {
+  margin-top: 3%;
+  margin-left: 26, 5%;
+}
+
 .divButtons button {
   margin: 4px;
 }
 img {
   margin-top: 3px;
 }
-
+.img-fluid{
+width: 100%; 
+height: auto;
+ }
 .itemDetail {
   max-width: 760px;
   margin-top: 20px;
+  ;
 }
 .itemDetailBodyDark {
-  background: hsl(0, 0%, 33%);
+  margin-top: 3%;
+  margin-left: 26, 5%;
+  border-left: 5%;
+  background-color:#A1A7C8;
   color:white;
 }
 .contForm {

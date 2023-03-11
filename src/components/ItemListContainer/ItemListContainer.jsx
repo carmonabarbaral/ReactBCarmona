@@ -21,7 +21,7 @@ export const ItemListContainer = () => {
   if(idCategoria){
     getProductos().then(products => {
       const categoriaId = categorias.find((data)=>data.categoria === idCategoria)?.id
-      const prods = products.filter(prod =>prod.stock >0).filter(prod => prod.idCategoria ===categoriaId)
+      const prods = products.filter(prod => prod.stock > 0).filter(prod =>prod.stock >0).filter(prod => prod.idCategoria ===categoriaId)
       const items = <ItemList prods={prods} plantilla="Item"/>
       setProductos(items)
     })
