@@ -19,7 +19,7 @@ export const Categorias = React.memo(() => {
             <ul className="dropdown-menu">
               { Categorias.map ((a) =>{
                 return (<li key ={a.nombre} >
-                  <Link className="dropdow-item" to ={`/category/${a.nombre}`}>{a.nombre}</Link>
+                  <Link className="dropdow-item text-decoration-none"  to ={`/category/${a.nombre}`}>{a.nombre}</Link>
                   </li>
                 )
 
