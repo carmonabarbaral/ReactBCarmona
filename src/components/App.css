@@ -3,6 +3,10 @@
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
+.btn-dark{
+  margin: 1%;
+  padding: 1%;
+}
 .cardProducto {
   width: 18rem;
   margin:4px;
@@ -24,7 +28,7 @@ text-align: center;
 
 }
 .cardBodyDark {
-  background-color: hsl(0, 0%, 33%);
+  background-color: hsl(0, 0%, 53%);
   margin-bottom: 3px;
   text-align: center;
 }
@@ -63,7 +67,6 @@ height: auto;
   margin-top: 3%;
   margin-left: 26, 5%;
   border-left: 5%;
-  background-color:#A1A7C8;
   color:white;
 }
 .contForm {

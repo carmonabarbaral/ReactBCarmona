@@ -16,7 +16,7 @@ export const ItemDetail = ({prod}) =>{
     </div>
     <div className="col-md-8">
     <div className={`card-body ${darkMode && "itemDetailBodyDark"}`}>
-            <h5 className="card-title">{prod.destino}</h5>
+            <h5 className="card-title">{prod.nombre}</h5>
             <p className="card-text">Precio: ${new Intl.NumberFormat('de-DE').format(prod.precio)}</p>
             <p className="card-text">Stock: {prod.stock}</p>
              <ItemCount ValInicial={1} stock={prod.stock} onAdd={onAdd}/> 
