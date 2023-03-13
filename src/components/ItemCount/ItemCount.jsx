@@ -9,7 +9,7 @@ export const ItemCount = ({ValInicial, stock,onAdd}) => {
   const restar = () =>contador > ValInicial && setContador(contador - 1)
   return (
     <div>
-      <button className="btn btn-dark" onClick={restar}>-</button> 
+      <button className="btn btn-dark" onClick={()=>restar()}>-</button> 
       {contador}
       <button className="btn btn-dark" onClick={sumar}>+</button>
       <button className="btn btn-dark" onClick={()=> onAdd(contador)}>Agregar al Carrito</button>
